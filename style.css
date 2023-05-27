@@ -1,7 +1,7 @@
-@import url("Reset.css");
-@import url("Home.css");
-@import url("Vestibular.css");
-@import url("ADS.css");
+@import url("Screens/Styles/Reset.css");
+@import url("Screens/Styles/Home.css");
+@import url("Screens/Styles/Vestibular.css");
+@import url("Screens/Styles/ADS.css");
 
 :root {
   --azulPrimario: #3988B0;
