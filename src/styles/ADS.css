@@ -1,0 +1,16 @@
+.cardComponenteADS {
+    background-color: var(--azulPrimario);
+    border-radius: 0.3em;
+    height: 20em;
+}
+
+.listaVertical {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.listaVertical li {
+    flex: 1;
+}

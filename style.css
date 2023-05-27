@@ -1,6 +1,157 @@
-:root{
-    --azulPrimario: #3988B0;
-    --azulSegundario: #043957;
-    --fontePrimaria: "Poppins";
-    --tamanhoFontePrincipal: 16px;
+@import url("src/styles/reset.css");
+@import url("src/styles/home.css");
+@import url("src/styles/vestibular.css");
+@import url("src/styles/ADS.css");
+
+:root {
+  --azulPrimario: #3988B0;
+  --azulSegundario: #043957;
+  --corFontePrimaria: #FFFFFF;
+  --fontePrimaria: "Poppins";
+}
+
+body {
+  font-family: var(--fontePrimaria);
+  background-color: var(--azulSegundario);
+  color: var(--corFontePrimaria);
+  display: flex;
+  flex-direction: column;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+main {
+  flex: 1;
+}
+
+.material-icons {
+  color: var(--corFontePrimaria);
+}
+
+button.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+button.navbar-toggler {
+  padding: 0;
+  margin: 1em;
+}
+
+a.navbar-brand {
+  margin: 0%;
+  padding: 0%;
+}
+
+.cardPrincipal {
+  background-color: var(--azulPrimario);
+  border-radius: 0.3em;
+}
+
+.imagemCard {
+  width: 50%;
+  object-fit: scale-down;
+}
+
+.cardComponente {
+  background-color: var(--azulPrimario);
+  border-radius: 0.3em;
+  height: 15em;
+}
+
+.cardTexto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  text-align: center;
+}
+
+.tituloCard,
+.subTituloCard {
+  color: var(--azulSegundario);
+  font-weight: 700;
+}
+
+footer {
+  flex-shrink: 0;
+}
+
+.footerTechs{
+  font-weight: bolder;
+}
+
+.assinatura{
+  font-style: italic;
+  font-weight: lighter;
+}
+
+@media (max-width: 280px) {
+  .nav-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .navbar-brand {
+    display: flex;
+    justify-content: center;
+  }
+
+  ul.navbar-nav li {
+    text-align: center;
+  }
+}
+
+@media (max-width:400px){
+  .text-justify-mobile{
+    text-align: justify;
+  }
+}
+
+@media(max-width: 280px) {
+  html {
+    font-size: .6rem;
+  }
+}
+
+@media(min-width: 281px) and (max-width: 575px) {
+  html {
+    font-size: .8rem;
+  }
+}
+
+@media(min-width: 576px) and (max-width: 768px) {
+  html {
+    font-size: 1rem;
+  }
+}
+
+@media(min-width: 769px) and (max-width: 992px) {
+  html {
+    font-size: 1.2rem;
+  }
+}
+
+@media(min-width: 993px) and (max-width: 1200px) {
+  html {
+    font-size: 1.4rem;
+  }
+}
+
+@media(min-width: 1201px) and (max-width: 1400px) {
+  html {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 280px) and (max-height: 653px) {
+  body {
+    min-width: 280px;
+    min-height: 653px;
+  }
 }
