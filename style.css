@@ -1,7 +1,7 @@
-@import url("Styles/Reset.css");
-@import url("Styles/home.css");
-@import url("Styles/vestibular.css");
-@import url("Styles/ADS.css");
+@import url("Reset.css");
+@import url("Home.css");
+@import url("Vestibular.css");
+@import url("ADS.css");
 
 :root {
   --azulPrimario: #3988B0;
